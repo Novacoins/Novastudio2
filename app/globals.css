@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+:root { --ink: #07080d; --muted: #9295a3; --line: rgba(255,255,255,.1); --gold: #dcb66a; --blue: #7e9cff; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--ink); color: #f6f5f0; font-family: 'DM Sans', sans-serif; }
+a { color: inherit; text-decoration: none; }
+::selection { background: var(--gold); color: var(--ink); }
+.container { width: min(1180px, calc(100% - 48px)); margin-inline: auto; }
+.display { font-family: 'Space Grotesk', sans-serif; letter-spacing: -.06em; }
+.grid-bg { background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px); background-size: 76px 76px; }
+.glass { background: linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.025)); border: 1px solid var(--line); backdrop-filter: blur(18px); }
+.gold-text { background: linear-gradient(120deg, #fff1b8, #dcb66a 46%, #fff4c3); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero-orb { background: radial-gradient(circle at 50% 48%, rgba(126,156,255,.32), transparent 34%), radial-gradient(circle at 70% 30%, rgba(220,182,106,.2), transparent 28%), radial-gradient(circle at 30% 80%, rgba(123,73,255,.16), transparent 28%); }
+.hover-lift { transition: transform .3s ease, border-color .3s ease, background .3s ease; }
+.hover-lift:hover { transform: translateY(-6px); border-color: rgba(220,182,106,.45); background: linear-gradient(135deg, rgba(255,255,255,.12), rgba(255,255,255,.04)); }
+@media (max-width: 640px) { .container { width: min(100% - 32px, 1180px); } }
